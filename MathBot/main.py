@@ -2,7 +2,7 @@ import discord
 import mysql.connector
 import random
 
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="2I8AUUD5", database="AIME")
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="database_password", database="database_name")
 mycursor = mydb.cursor()
 command = "Select problem from AIME_Problems where problemid={}"
 randomcmd = "Select problem from AIME_Problems where id={}"
@@ -66,4 +66,4 @@ async def answer(message):
 
 
 
-client.run('MTAyNTgxOTY2MzQ3ODgxNjc3OA.GA_asR.iWKY_T3K9G00ptBIo5Cidh6B8hXrYQUUmskxAs')
+client.run('token')
