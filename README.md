@@ -14,7 +14,7 @@ If one wants to find the the problem labeled 2022 AIME II Problem 7, then the id
 
 If one wants a random problem, simply type in '!random' and the bot will spew a randomly picked problem.
 
-If one wants to check/find the answer to their problem, simply type in `!answer [problem id] [answer]` and the bot will reply by responding whether it is incorrect or correct.
+If one wants to check/find the answer to their problem, simply type in `!answer [problem id] [answer]`(with spaces) and the bot will reply by responding whether it is incorrect or correct.
 
 More functions will be coming to this bot, like the addition of more problems and the `!test` command, which will give the user a 15-problem randomly generated test. 
 
