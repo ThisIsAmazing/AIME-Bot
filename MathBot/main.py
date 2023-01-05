@@ -24,6 +24,7 @@ async def on_message(message):
         return
     await problem(message)
     await answer(message)
+    await help(message)
 
 async def problem(message):
     messagecontent = message.content
@@ -61,6 +62,18 @@ async def answer(message):
                 await message.channel.send("Correct!")
             else:
                 await message.channel.send("Incorrect!")
+                
+async def help(message):
+    messagecontent = message.content
+    if messagecontent.startswith("!help"):
+        await message.channel.send("Use this bot to fetch past American Invitational Mathematics Exam problems from 2022 to practice for the exam!")
+        await message.channel.send("To select a specific problem, you must type in its problem id.")
+        await message.channel.send("The id is formed by getting the year of release(i.e 2022), the version(AIME I/II), and the problem number(i.e #13).")
+        await message.channel.send("If one wants to find the the problem labeled 2022 AIME II Problem 7, then the id will simply be 202227. 2022 is the year of release, 2 is the version, and 7 is the problem number.")
+        await message.channel.send("If one wants a random problem, simply type in **!random** and the bot will spew a randomly picked problem.")
+        await message.channel.send("If one wants to check/find the answer to their problem, simply type in **!answer [problem id] [answer]**(with spaces) and the bot will reply by responding whether it is incorrect or correct.")
+        await message.channel.send("More functions will be coming to this bot, like the addition of more problems and the '!test' command, which will give the user a 15-problem randomly generated test.")
+
 
 
 
