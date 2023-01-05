@@ -18,6 +18,9 @@ If one wants to check/find the answer to their problem, simply type in `!answer 
 
 More functions will be coming to this bot, like the addition of more problems and the `!test` command, which will give the user a 15-problem randomly generated test. 
 
+# Adding The Bot
+Use [this link](https://discordapp.com/oauth2/authorize?&client_id=1025819663478816778&scope=bot) to add this bot to a server.
+
 
 
 
