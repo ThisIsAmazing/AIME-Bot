@@ -4,11 +4,11 @@ import random
 
 mydb = mysql.connector.connect(host="localhost", user="root", passwd="database_password", database="database_name")
 mycursor = mydb.cursor()
-command = "Select problem from AIME_Problems where problemid={}"
-randomcmd = "Select problem from AIME_Problems where id={}"
-randomcmd2 = "Select problemid from AIME_Problems where id={}"
-answercmd = "Select answer from AIME_Problems where problemid={}"
-file_template = "/Users/kedarvernekar/MathBot/Problem Pictures/{}.png"
+command = "Select problem from database_name where problemid={}"
+randomcmd = "Select problem from database_name where id={}"
+randomcmd2 = "Select problemid from database_name where id={}"
+answercmd = "Select answer from database_name where problemid={}"
+file_template = "[path]{}.png"
 prefix = '!'
 intents = discord.Intents.default()
 intents.message_content = True
